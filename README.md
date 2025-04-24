@@ -40,3 +40,4 @@ Este projeto é uma aplicação web simples e intuitiva para gerenciar os agenda
    ```
 2. Abra o arquivo `index.html` em seu navegador.
 3. Explore e faça agendamentos!
+

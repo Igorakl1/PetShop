@@ -211,6 +211,20 @@ img {
   border-radius: 10px;
 }
 
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.modal {
+  animation: modal 0.3s forwards;
+}
+
 .modal-content {
   background-color: #2b2b3a;
   width: 80%;
