@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>Agendamento de petshop</title>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="/img/Frame 48095946.png" alt="">
+  </div>
+  <div class="corpo">
+    <div class="titulo">
+      <h1>Sua agenda</h1>
+      <p class="text-title">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+
+      <div class="date-picker">
+        <label for="data">
+          <img src="/img/Calendar-Minimalistic--Streamline-Solar.png" alt="Calendário" />
+        </label>
+        <input type="date" id="data" name="data" />
+        <img src="/img/Icon.png" alt="">
+      </div>
+    </div>
+
+    <div class="morning">
+      <div class="header">
+        <div class="header-title">
+          <img src="/img/Sun Fog.png" alt="Manhã" />
+          <span>Manhã</span>
+        </div>
+        <span class="hora">09h–12h</span>
+      </div>
+    </div>
+
+    <div class="afternoon">
+      <div class="header">
+        <div class="header-title">
+          <img src="/img/Cloud Sun 4.png" alt="Tarde" />
+          <span>Tarde</span>
+        </div>
+        <span class="hora">13h–18h</span>
+      </div>
+    </div>
+
+    <div class="night">
+      <div class="header">
+        <div class="header-title">
+          <img src="/img/Moon Stars.png" alt="Noite" />
+          <span>Noite</span>
+        </div>
+        <span class="hora">19h–21h</span>
+      </div>
+    </div>
+
+    <button class="botao-flutuante">Novo agendamento</button>
+  </div>
+  <div class="modal-overlay" id="modal-overlay"></div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Agendar um atendimento</h2>
+        <span id="close-modal" class="close">&times;</span>
+      </div>
+      <p>Preencha os dados do cliente para realizar o agendamento:</p>
+
+      <form id="agendamento-form">
+        <label for="modal-tutor-nome">Nome do Tutor</label>
+        <input type="text" id="modal-tutor-nome" name="tutor-nome" required>
+
+        <label for="modal-pet-nome">Nome do Pet</label>
+        <input type="text" id="modal-pet-nome" name="pet-nome" required>
+
+        <label for="modal-telefone">Telefone</label>
+        <input type="tel" id="modal-telefone" name="telefone" required>
+
+        <label for="modal-servico">Descrição do Serviço</label>
+        <input type="text" id="modal-servico" name="servico" required>
+
+        <div class="modal-time" id="data">
+          <label for="modal-data">Data</label>
+          <input type="date" id="modal-data" name="data" required>
+
+          <label for="modal-hora">Hora</label>
+          <input type="time" id="modal-hora" name="hora" required>
+        </div>
+        <div class="agendar">
+          <button type="submit">Agendar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+
+</html>
